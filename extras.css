@@ -1,0 +1,96 @@
+@font-face {
+    font-family: blasphemous;
+    src: url("./fonts/blasphemous.ttf") format("truetype");
+  }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: blasphemous;
+  }
+  
+  .carousel {
+    position: relative;
+    max-width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+  }
+  
+  .carousel-container {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+    display: none;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slide-text {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+
+  .back-to-menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: blasphemous;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .back-to-menu:hover {
+    background-color: transparent;
+    color: #eaff00;
+    font-family: blasphemous;
+  }
+  
+  

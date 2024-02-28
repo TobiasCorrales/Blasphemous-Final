@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interfaz de Opciones</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <audio id="miAudio" controls autoplay loop>
+        <source src="./audios/Blastheme.mp3" type="audio/mp3">    
+    </audio>
+
+  <div class="container">
+    <h1>Interfaz de Opciones</h1>
+    <div class="option">
+      <label for="music">Música:</label>
+      <button id="music">On</button>
+    </div>
+    <div class="option">
+      <label for="soundEffects">Efectos de Sonido:</label>
+      <button id="soundEffects">On</button>
+    </div>
+    <div class="option">
+      <label for="subtitles">Subtítulos:</label>
+      <button id="subtitles">On</button>
+    </div>
+    <div class="option">
+      <label for="language">Idioma:</label>
+      <select id="language">
+        <option value="ingles">Inglés</option>
+        <option value="espanol">Español</option>
+      </select>
+    </div>
+    <button id="configButton">Guardar Cambios y Volver al Menú</button>
+    <p id="resultado"></p>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
+

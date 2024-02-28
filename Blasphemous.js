@@ -1,22 +1,26 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("peregrinacionBtn").addEventListener("click", function() {
-        window.location.href = "./formulario_usuario.html";
+        window.location.href = "formulario_usuario.html";
     });
-    document.getElementById("optionsBtn").addEventListener("click", showOptions);
-    document.getElementById("extrasBtn").addEventListener("click", showExtras);
+    document.getElementById("optionsBtn").addEventListener("click", function() {
+        window.location.href = "options.html"
+    });
+    document.getElementById("extrasBtn").addEventListener("click", function() {
+        window.location.href = "extras.html"
+    });
     document.getElementById("exitBtn").addEventListener("click", exitGame);
 });
 
 function redirectToPeregrinacion() {
-    window.location.href = "./formulario_usuario.html"; 
+    window.location.href = "formulario_usuario.html"; 
 }
 
-function showOptions() {
-    console.log("Opciones del juego");
+function redirectToOpciones () {
+    window.location.href = "options.html"
 }
 
-function showExtras() {
-    console.log("Extras");
+function redirectToExtras() {
+    window.location.href = "extras.html"
 }
 
 function exitGame() {

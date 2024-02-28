@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blasphemous</title>
+  <link rel="stylesheet" href="cinematica.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <video autoplay  muted  controls="autoplay" loop="loop" id="video_background" preload="auto" volume="50">
+      <source src="cinematica/video (2).mp4" type="video/mp4">
+    </video>
+    <div class="content">
+      
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

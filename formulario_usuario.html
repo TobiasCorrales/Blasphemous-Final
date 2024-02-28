@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="estilofor.css">
 </head>
 <body>
-    <audio id="miAudio" controls autoplay loop>
-        <source src="./audio/Blastheme.mp3" type="audio/mp3">    
-    </audio>    
+    <audio id="miAudio" controls>
+        <source src="./audios/Blastheme.mp3" type="audio/mp3">    
+    </audio>  
     <div class="container">
-        <button class="back-to-menu" id="backToMenuButton">Volver al Menú</button>
+        <button class="back-to-menu" onclick="goToPreviousMenu()">Volver al Menú</button>
         <h2>Registro Blasphemous</h2>
         <form id="registrationForm">
             <label for="username">Nombre de usuario:</label>
@@ -20,10 +20,9 @@
             <label for="password">Contraseña:</label>
             <input type="password" id="password" name="password" required><br><br>
             <input type="submit" value="Registrarse">
-      
-            <script src="./formulario_usuario.js"></script>
-      
         </form>
     </div>
+
+    <script src="formulario_usuario.js"></script>
 </body>
 </html>

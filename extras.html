@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrusel con Botones</title>
+  <link rel="stylesheet" href="./extras.css">
+</head>
+<body>
+    <audio id="slideSound">
+        <source src="./audios/CLICK.mp3" type="audio/mpeg">
+        Tu navegador no soporta sonidos.
+    </audio>
+    <div class="carousel">
+        <button class="back-to-menu" onclick="goToPreviousMenu()">Volver al Menú</button>
+        <div class="carousel-container">
+            <div class="slide active">
+                <img src="./imagenes/Default.png" alt="Imagen 1">
+                <div class="slide-text">
+                    <h2>Predeterminado</h2>
+                    <p>El clásico y icónico traje y color de nuestro penitente</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./imagenes/Skin2.png" alt="Imagen 2">
+                <div class="slide-text">
+                    <h2>Hijo del Milagro</h2>
+                    <p>El penitente se llena de fe (SKIN FINAL BUENO)</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./imagenes/Skin3.png" alt="Imagen 3">
+                <div class="slide-text">
+                    <h2>Apostasía Real</h2>
+                    <p>El penitente abandona toda creencia (SKIN FINAL MALO)</p>
+                </div>
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    <script src="./extras.js"></script>
+</body>
+</html>
+
+

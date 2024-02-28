@@ -1,6 +1,6 @@
 @font-face {
     font-family: blasphemous;
-    src: url("./fonts/blasphemous.ttf") format ("truetype");
+    src: url("./fonts/blasphemous.ttf") format("truetype");
 }
 
 body {
@@ -62,6 +62,26 @@ input[type="submit"]:hover {
     background-color: #960036;
     font-family: blasphemous;
 }
+
+.back-to-menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: blasphemous;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .back-to-menu:hover {
+    background-color: transparent; 
+    color: #eaff00;
+    font-family: blasphemous;
+  }
 
 #miAudio {
     visibility: hidden;
